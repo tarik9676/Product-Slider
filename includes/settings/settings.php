@@ -23,6 +23,8 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
 
         <h1>Product Slider Settings</h1>
 
+        <p><strong>Note:</strong> Here is your shortcode for this slideshow <code>[show_devtarik_product_slider]</code></p>
+
         <form action="" method="post">
             <table class="form-table" role="presentation">    
             
