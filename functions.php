@@ -1,13 +1,37 @@
 <?php
 
-$slider_number = get_option( "plslider_num", 3 );
-$plslider_auto = get_option( "plslider_auto_slider", "yes" );
-$plslider_i_seconds = get_option( "plslider_i_seconds", 3000 );
-$plslider_products_ids = get_option( "plslider_products_ids" );
-$pro_img_width = get_option( "plslider_product_img_width", "300" );
-$plslider_show_arrows = get_option( "plslider_show_arrows", "yes" );
-$plslider_show_dots = get_option( "plslider_show_dots", "yes" );
-$plslider_dots_style = get_option( "plslider_dots_style", "circle" );
+
+if ( ! isset( $slider_number ) ) {
+    $slider_number = get_option( "plslider_num", 3 );
+}
+
+if ( ! isset( $plslider_auto ) ) {
+    $plslider_auto = get_option( "plslider_auto_slider", "yes" );
+}
+
+if ( ! isset( $plslider_i_seconds ) ) {
+    $plslider_i_seconds = get_option( "plslider_i_seconds", 3000 );
+}
+
+if ( ! isset( $plslider_products_ids ) ) {
+    $plslider_products_ids = get_option( "plslider_products_ids" );
+}
+
+if ( ! isset( $pro_img_width ) ) {
+    $pro_img_width = get_option( "plslider_product_img_width", "300" );
+}
+
+if ( ! isset( $pro_img_width ) ) {
+    $pro_img_width = get_option( "plslider_show_arrows", "yes" );
+}
+
+if ( ! isset( $plslider_show_dots ) ) {
+    $plslider_show_dots = get_option( "plslider_show_dots", "yes" );
+}
+
+if ( ! isset( $plslider_dots_style ) ) {
+    $plslider_dots_style = get_option( "plslider_dots_style", "circle" );
+}
 
 if( ! function_exists( 'plslider_enqueue_scripts' ) ) {
     function plslider_enqueue_scripts() {

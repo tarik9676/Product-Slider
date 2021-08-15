@@ -16,17 +16,20 @@ if( ! function_exists('plslider_main_product_slider') ){
         global $plslider_show_dots;
         global $plslider_dots_style;
 
-        if ( $plslider_products_ids == null ) {
-            $plslider_slider = new WP_Query(array(
-                'posts_per_page' => $slider_number,
-                'post_type' => 'product'
-            ));
-        } else {
-            $plslider_slider = new WP_Query(array(
-                'post_type' => 'product',
-                'post__in' => explode( ',', $plslider_products_ids )
-            ));
+        if ( ! isset( $plslider_slider ) ) {
+            if ( $plslider_products_ids == null ) {
+                $plslider_slider = new WP_Query(array(
+                    'posts_per_page' => $slider_number,
+                    'post_type' => 'product'
+                ));
+            } else {
+                $plslider_slider = new WP_Query(array(
+                    'post_type' => 'product',
+                    'post__in' => explode( ',', $plslider_products_ids )
+                ));
+            }
         }
+        
         ?>
 
 
