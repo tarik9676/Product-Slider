@@ -31,12 +31,12 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 <tr>
                     <th scope="row"><label for="auto_slide">Auto Slide</label></th>
                     <td>
-                        <input type="radio" name="auto_slide" value="yes" <?php if ( $plslider_auto === "yes" ) { echo "checked"; } ?> />
+                        <input type="radio" name="auto_slide" value="yes" <?php if ( $plslider_auto === "yes" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="yes">Yes</label>
 
                         <br />
                         
-                        <input type="radio" name="auto_slide" value="no" <?php if ( $plslider_auto === "no" ) { echo "checked"; } ?> />
+                        <input type="radio" name="auto_slide" value="no" <?php if ( $plslider_auto === "no" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="no">No</label>
                     </td>
                 </tr>
@@ -44,7 +44,7 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 <tr>
                     <th scope="row"><label for="i_seconds">Interval Time (ms)</label></th>
                     <td>
-                        <input type="number" name="i_seconds" class="regular-name" value="<?php echo $plslider_i_seconds; ?>" />
+                        <input type="number" name="i_seconds" class="regular-name" value="<?php echo esc_html__( $plslider_i_seconds ); ?>" />
                         <p class="description">Choose how many mili seconds (ms) you wanna wait until slide to next slider automatically.</p>
                     </td>
                 </tr>
@@ -52,7 +52,7 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 <tr>
                     <th scope="row"><label for="slider_number">Slider Number</label></th>
                     <td>
-                        <input type="number" name="slider_number" class="regular-name" value="<?php echo $slider_number; ?>" />
+                        <input type="number" name="slider_number" class="regular-name" value="<?php echo esc_html__( $slider_number ); ?>" />
                         <p class="description">Decide how many products (latest products) you want to add to the slider. <br /><strong>Note: You must leave "Custom Sliders (Products IDs)" field empty if you want to add latest products.</strong></p>
                     </td>
                 </tr>
@@ -60,25 +60,25 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 <tr>
                     <th scope="row"><label for="products_ids">Custom Sliders (Products IDs)</label></th>
                     <td>
-                        <input type="text" name="products_ids" class="regular-name" value="<?php echo $plslider_products_ids; ?>" placeholder='Eg: 65, 20, 45' />
+                        <input type="text" name="products_ids" class="regular-name" value="<?php echo esc_html__( $plslider_products_ids ); ?>" placeholder='Eg: 65, 20, 45' />
                         <p class="description">Enter the custom products IDs manually which you want to add to the slider. <strong>Remember the format; example: (65, 20, 45).</strong></p>
                     </td>
                 </tr>
 
                 <tr>
                     <th scope="row"><label for="pro_img_width">Product Image Width (px)</label></th>
-                    <td><input type="number" name="pro_img_width" class="regular-name" value="<?php echo $pro_img_width; ?>" /></td>
+                    <td><input type="number" name="pro_img_width" class="regular-name" value="<?php echo esc_html__( $pro_img_width ); ?>" /></td>
                 </tr>
 
                 <tr>
                     <th scope="row"><label for="arrows_visibility">Show Arrows</label></th>
                     <td>
-                        <input type="radio" name="arrows_visibility" value="yes" <?php if ( $plslider_show_arrows === "yes" ) { echo "checked"; } ?> />
+                        <input type="radio" name="arrows_visibility" value="yes" <?php if ( $plslider_show_arrows === "yes" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="yes">Yes</label>
 
                         <br />
 
-                        <input type="radio" name="arrows_visibility" value="no" <?php if ( $plslider_show_arrows === "no" ) { echo "checked"; } ?> />
+                        <input type="radio" name="arrows_visibility" value="no" <?php if ( $plslider_show_arrows === "no" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="no">No</label>
                     </td>
                 </tr>
@@ -86,12 +86,12 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 <tr>
                     <th scope="row"><label for="dots_visibility">Show Dots</label></th>
                     <td>
-                        <input type="radio" name="dots_visibility" value="yes" <?php if ( $plslider_show_dots === "yes" ) { echo "checked"; } ?> />
+                        <input type="radio" name="dots_visibility" value="yes" <?php if ( $plslider_show_dots === "yes" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="yes">Yes</label>
 
                         <br />
 
-                        <input type="radio" name="dots_visibility" value="no" <?php if ( $plslider_show_dots === "no" ) { echo "checked"; } ?> />
+                        <input type="radio" name="dots_visibility" value="no" <?php if ( $plslider_show_dots === "no" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="no">No</label>
                     </td>
                 </tr>
@@ -99,12 +99,12 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 <tr>
                     <th scope="row"><label for="dots_style">Dots Style</label></th>
                     <td>
-                        <input type="radio" name="dots_style" value="circle" <?php if ( $plslider_dots_style === "circle" ) { echo "checked"; } ?> />
+                        <input type="radio" name="dots_style" value="circle" <?php if ( $plslider_dots_style === "circle" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="circle">Circle</label>
 
                         <br />
 
-                        <input type="radio" name="dots_style" value="bar" <?php if ( $plslider_dots_style === "bar" ) { echo "checked"; } ?> />
+                        <input type="radio" name="dots_style" value="bar" <?php if ( $plslider_dots_style === "bar" ) { echo esc_html__( "checked" ); } ?> />
                         <label for="bar">Bar</label>
                     </td>
                 </tr>

@@ -5,7 +5,7 @@
                 <?php $plslider_index = 0; ?>
 
                 <?php while ( $plslider_slider->have_posts() ) : $plslider_slider->the_post(); $plslider_index++; ?>
-                    <div class="dot" onclick="slideAction(<?php echo $plslider_index; ?>);" ></div>                    
+                    <div class="dot" onclick="slideAction(<?php echo esc_html__( $plslider_index ); ?>);" ></div>                    
                 <?php
                     endwhile;
                 ?>
