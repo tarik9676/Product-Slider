@@ -1,10 +1,10 @@
 === Product Slider ===
 Contributors: trkl9676
 Donate link: https://www.paypal.com/donate?hosted_button_id=Z9ZHVBMZYYEBJ
-Tags: product-slider, product, slider, devtarik, tarikul
+Tags: product-slider, product, slider, devtarik, tarikul, devtarik-ps
 Requires at least: 4.7
-Tested up to: 5.4
-Stable tag: 4.3
+Tested up to: 5.8
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html

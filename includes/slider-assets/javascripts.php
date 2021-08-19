@@ -5,7 +5,7 @@
     }
     
     // Product Image Width
-    rStyle("--productImgWidth", <?php echo $pro_img_width; ?> + "px");
+    rStyle("--productImgWidth", <?php echo esc_html__( $pro_img_width ); ?> + "px");
 
     // Slider Dots Style
     <?php
@@ -17,13 +17,13 @@
             $dot_height = "8";
         }
     ?>
-    rStyle("--dotWidth", <?php echo $dot_width; ?> + "px");
-    rStyle("--dotHeight", <?php echo $dot_height; ?> + "px");
+    rStyle("--dotWidth", <?php echo esc_html__( $dot_width ); ?> + "px");
+    rStyle("--dotHeight", <?php echo esc_html__( $dot_height ); ?> + "px");
 
     var slides = document.getElementsByClassName( 'slider' );
     var dots = document.getElementsByClassName( 'dot' );
     let sIndex = 0;
-    let iSeconds = <?php echo $plslider_i_seconds; ?>;
+    let iSeconds = <?php echo esc_html__( $plslider_i_seconds ); ?>;
 
     slideShow(1);
     

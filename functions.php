@@ -21,8 +21,8 @@ if ( ! isset( $pro_img_width ) ) {
     $pro_img_width = get_option( "plslider_product_img_width", "300" );
 }
 
-if ( ! isset( $pro_img_width ) ) {
-    $pro_img_width = get_option( "plslider_show_arrows", "yes" );
+if ( ! isset( $plslider_show_arrows ) ) {
+    $plslider_show_arrows = get_option( "plslider_show_arrows", "yes" );
 }
 
 if ( ! isset( $plslider_show_dots ) ) {

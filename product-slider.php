@@ -4,8 +4,8 @@
 * Version: 1.0.0
 * Description: The best slider for prodcuts! Display your products using sliders.
 * Author: DevTarik
-* Slug: product-slider
-* Text Domain: product-slider
+* Slug: devtarik-ps
+* Text Domain: devtarik-ps
 *
 *
 *

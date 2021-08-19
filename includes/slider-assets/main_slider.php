@@ -7,7 +7,7 @@
         <div class="contents mr-1">
 
             <h2><?php the_title(); ?></h2>
-            <p class="details text-secondary"><?php echo wp_trim_words( get_the_content(), 15, ' more...' ); ?></p>
+            <p class="details text-secondary"><?php echo wp_trim_words( get_the_content(), 15, esc_html__(' more...') ); ?></p>
             <p class="price">Only @ <?php echo get_woocommerce_currency_symbol() . $product->get_price(); ?></p>
 
         </div>

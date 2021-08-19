@@ -123,7 +123,7 @@ if ( isset( $_REQUEST['plslider_admin_form'] ) ) {
     if ( $_REQUEST['plslider_admin_form'] == 'Submit' ) {
         
         // How many slider?
-        update_option( "plslider_num", $_POST['slider_number'] );
+        update_option( "plslider_num", sanitize_text_field( $_POST['slider_number'] ) );
 
         // Yes & No for auto slide
         if ( $_POST['auto_slide'] === "yes" ) {
@@ -135,22 +135,22 @@ if ( isset( $_REQUEST['plslider_admin_form'] ) ) {
         }
         
         // Saving Interval time for auto sliding
-        update_option( "plslider_i_seconds", $_POST['i_seconds'] );
+        update_option( "plslider_i_seconds", sanitize_text_field( $_POST['i_seconds'] ) );
 
         // Saving Custom Products IDs
-        update_option( "plslider_products_ids", $_POST['products_ids'] );
+        update_option( "plslider_products_ids", sanitize_text_field( $_POST['products_ids'] ) );
 
         // Products Image Width
-        update_option( "plslider_product_img_width", $_POST['pro_img_width'] );
+        update_option( "plslider_product_img_width", sanitize_text_field( $_POST['pro_img_width'] ) );
 
         // Arrows Visibility
-        update_option( "plslider_show_arrows", $_POST['arrows_visibility'] );
+        update_option( "plslider_show_arrows", sanitize_text_field( $_POST['arrows_visibility'] ) );
 
         // Dots Visibility
-        update_option( "plslider_show_dots", $_POST['dots_visibility'] );
+        update_option( "plslider_show_dots", sanitize_text_field( $_POST['dots_visibility'] ) );
 
         // Dots Style
-        update_option( "plslider_dots_style", $_POST['dots_style'] );
+        update_option( "plslider_dots_style", sanitize_text_field( $_POST['dots_style'] ) );
 
     }
 }
