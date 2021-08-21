@@ -6,13 +6,13 @@
     <div class="col-8 col-sm-10 slider justify-content-center">
         <div class="contents mr-1">
 
-            <h2><?php the_title(); ?></h2>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p class="details text-secondary"><?php echo wp_trim_words( get_the_content(), 15, esc_html__(' more...') ); ?></p>
             <p class="price">Only @ <?php echo get_woocommerce_currency_symbol() . $product->get_price(); ?></p>
 
         </div>
 
-        <div class="image ml-1 d-flex align-items-center"><?php the_post_thumbnail(); ?></div>
+        <div class="image ml-1 d-flex align-items-center"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
     </div>
 
 <?php endwhile; ?>
