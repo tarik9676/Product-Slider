@@ -12,7 +12,7 @@
 
         </div>
 
-        <div class="image ml-1 d-flex align-items-center"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( "medium" ); ?></a></div>
+        <div class="image ml-1 d-flex align-items-center"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( $plslider_img_size ); ?></a></div>
     </div>
 
 <?php endwhile; ?>

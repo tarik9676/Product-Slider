@@ -15,6 +15,7 @@ if( ! function_exists('plslider_main_product_slider') ){
         global $plslider_show_arrows;
         global $plslider_show_dots;
         global $plslider_dots_style;
+        global $plslider_img_size;
 
         if ( ! isset( $plslider_slider ) ) {
             if ( $plslider_products_ids == null ) {

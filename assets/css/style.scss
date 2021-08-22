@@ -19,7 +19,7 @@
         background-color: transparent;
         color: #e1e1e1;
         border: none;
-        padding: 100px 30px;
+        padding: 100px 10px;
         z-index: 999;
 
         &:hover {
@@ -49,7 +49,7 @@
 
 .slider {
     h2 {
-        font-size: 35px;
+        font-size: 30px;
         
         a {
             text-decoration: none!important;
@@ -78,7 +78,6 @@
 
     .image img {
         height: auto;
-        width: var(--productImgWidth);
     }
 }
 

@@ -15,7 +15,7 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
         global $plslider_auto;
         global $plslider_i_seconds;
         global $plslider_products_ids;
-        global $pro_img_width;
+        global $plslider_img_size;
         global $plslider_show_arrows;
         global $plslider_show_dots;
         global $plslider_dots_style;
@@ -66,19 +66,42 @@ if ( ! function_exists( 'plslider_menu_func' ) ) {
                 </tr>
 
                 <tr>
-                    <th scope="row"><label for="pro_img_width">Product Image Width (px)</label></th>
-                    <td><input type="number" name="pro_img_width" class="regular-name" value="<?php echo esc_html__( $pro_img_width ); ?>" /></td>
+                    <th scope="row"><label for="img_size">Image Size</label></th>
+                    <td>
+                        <input type="radio" name="img_size" class="regular-name" value="shop_thumbnail" <?php plslider_checked( $plslider_img_size, "shop_thumbnail" ); ?> />
+                        <label for="small">Small</label>
+
+                        <br />
+
+                        <input type="radio" name="img_size" class="regular-name" value="shop_catalog" <?php plslider_checked( $plslider_img_size, "shop_catalog" ); ?> />
+                        <label for="medium">Medium</label>
+
+                        <br />
+
+                        <input type="radio" name="img_size" class="regular-name" value="shop_single" <?php plslider_checked( $plslider_img_size, "shop_single" ); ?> />
+                        <label for="large">Large</label>
+
+                        <br />
+
+                        <input type="radio" name="img_size" class="regular-name" value="large" <?php plslider_checked( $plslider_img_size, "large" ); ?> />
+                        <label for="larger">Larger</label>
+
+                        <br />
+
+                        <input type="radio" name="img_size" class="regular-name" value="full" <?php plslider_checked( $plslider_img_size, "full" ); ?> />
+                        <label for="full">Full</label>
+                    </td>
                 </tr>
 
                 <tr>
                     <th scope="row"><label for="arrows_visibility">Show Arrows</label></th>
                     <td>
-                        <input type="radio" name="arrows_visibility" value="yes" <?php if ( $plslider_show_arrows === "yes" ) { echo esc_html__( "checked" ); } ?> />
+                        <input type="radio" name="arrows_visibility" value="yes" <?php plslider_checked( $plslider_show_arrows, "yes" ); ?> />
                         <label for="yes">Yes</label>
 
                         <br />
 
-                        <input type="radio" name="arrows_visibility" value="no" <?php if ( $plslider_show_arrows === "no" ) { echo esc_html__( "checked" ); } ?> />
+                        <input type="radio" name="arrows_visibility" value="no" <?php plslider_checked( $plslider_show_arrows, "no" ); ?> />
                         <label for="no">No</label>
                     </td>
                 </tr>
@@ -140,8 +163,8 @@ if ( isset( $_REQUEST['plslider_admin_form'] ) ) {
         // Saving Custom Products IDs
         update_option( "plslider_products_ids", sanitize_text_field( $_POST['products_ids'] ) );
 
-        // Products Image Width
-        update_option( "plslider_product_img_width", sanitize_text_field( $_POST['pro_img_width'] ) );
+        // Products Image Size
+        update_option( "plslider_img_size", sanitize_text_field( $_POST['img_size'] ) );
 
         // Arrows Visibility
         update_option( "plslider_show_arrows", sanitize_text_field( $_POST['arrows_visibility'] ) );
