@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/donate?hosted_button_id=Z9ZHVBMZYYEBJ
 Tags: product-slider, product, slider, devtarik, tarikul, devtarik-ps, woo-product-slider, woo-ps, woocommerce-product-slider, woocommerce
 Requires at least: 4.7
 Tested up to: 5.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -62,6 +62,9 @@ It's in the WordPress dashboard.
 = 1.0.3 =
 - Fixed title & image size issue
 
+= 1.0.4 =
+- Added multiple image sizes & reduced title size
+
 == Upgrade Notice ==
 
 = 1.0.0 =
@@ -76,9 +79,10 @@ It's in the WordPress dashboard.
 = 1.0.3 =
 - Fixed title & image size issue
 
-== A brief Markdown ==
+= 1.0.4 =
+- Added multiple image sizes & reduced title size
 
-Unordered list:
+== A brief Markdown ==
 
 * Slideshow for products
 * Several handy settings in WordPress dashboard

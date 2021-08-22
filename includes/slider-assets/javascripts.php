@@ -3,9 +3,6 @@
     function rStyle(property, value) {
         document.querySelector(':root').style.setProperty(property, value);
     }
-    
-    // Product Image Width
-    rStyle("--productImgWidth", <?php echo esc_html__( $pro_img_width ); ?> + "px");
 
     // Slider Dots Style
     <?php
