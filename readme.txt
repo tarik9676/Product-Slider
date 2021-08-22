@@ -1,10 +1,10 @@
 === Product Slider ===
 Contributors: trkl9676
 Donate link: https://www.paypal.com/donate?hosted_button_id=Z9ZHVBMZYYEBJ
-Tags: product-slider, product, slider, devtarik, tarikul, devtarik-ps
+Tags: product-slider, product, slider, devtarik, tarikul, devtarik-ps, woo-product-slider, woo-ps, woocommerce-product-slider, woocommerce
 Requires at least: 4.7
 Tested up to: 5.8
-Stable tag: 1.0.0
+Stable tag: 1.0.3
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -26,32 +26,57 @@ Major features in Product Slider:
 *   Shortcode for the slider is [show_devtarik_product_slider]
 
 
+
+== Screenshots ==
+
+1. The main slideshow outfit.
+2. Settings Page.
+
+
+== Shortcodes ==
+
+Here is the shortcode <code>[show_devtarik_product_slider]</code>
+
+
 == Frequently Asked Questions ==
 
 = What is the shortcode? =
 
-[show_devtarik_product_slider]
+<code>[show_devtarik_product_slider]</code>
 
 = Where is the settings? =
 
 It's in the WordPress dashboard.
-
-== Screenshots ==
-
-1. The main slideshow.
-2. Settings Page.
 
 == Changelog ==
 
 = 1.0.0 =
 - Initial release.
 
+= 1.0.1 =
+- Style bugs fixed
+
+= 1.0.2 =
+- Functional bug fixed
+
+= 1.0.3 =
+- Fixed title & image size issue
+
 == Upgrade Notice ==
 
 = 1.0.0 =
 - Initial release.
 
-== A brief Markdown Example ==
+= 1.0.1 =
+- Style bugs fixed
+
+= 1.0.2 =
+- Functional bug fixed
+
+= 1.0.3 =
+- Fixed title & image size issue
+
+== A brief Markdown ==
 
 Unordered list:
 

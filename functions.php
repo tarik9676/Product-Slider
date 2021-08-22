@@ -30,7 +30,7 @@ if ( ! isset( $plslider_show_dots ) ) {
 }
 
 if ( ! isset( $plslider_dots_style ) ) {
-    $plslider_dots_style = get_option( "plslider_dots_style", "circle" );
+    $plslider_dots_style = get_option( "plslider_dots_style", "bar" );
 }
 
 if( ! function_exists( 'plslider_enqueue_scripts' ) ) {
