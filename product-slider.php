@@ -1,7 +1,7 @@
 <?php
 /*
 * Plugin Name: Woo Product Slider
-* Version: 1.0.4
+* Version: 1.0.5
 * Description: The best slider for prodcuts! Display your products using sliders.
 * Author: DevTarik
 * Author URI: http://devtarik.beztshop.com/

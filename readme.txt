@@ -65,6 +65,9 @@ It's in the WordPress dashboard.
 = 1.0.4 =
 - Added multiple image sizes & reduced title size
 
+= 1.0.5 =
+- A minor bug fixed
+
 == Upgrade Notice ==
 
 = 1.0.0 =
@@ -81,6 +84,9 @@ It's in the WordPress dashboard.
 
 = 1.0.4 =
 - Added multiple image sizes & reduced title size
+
+= 1.0.5 =
+- A minor bug fixed
 
 == A brief Markdown ==
 
